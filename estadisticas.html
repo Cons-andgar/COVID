@@ -1,0 +1,61 @@
+{% extends './base.html'%}
+
+{% block title %} estadisticas {% endblock %}
+
+{% block body %}
+  <h1 class="texto-borde">ESTADÍSTICAS</h1>
+{% endblock %}
+
+
+{% block flex1 %}
+<div class='flexitem'>
+    <div>
+        <p>Porcentaje de la población contagiada por sexo</p>
+    </div>
+</div>
+{% endblock %}
+
+<br>
+
+    <div class='container'>
+        {% block content0 %}
+        <!--IMAGEN PORCENTAJE-->
+        <div align="center">  <img src="static/css/porcentaje_sexo.jpeg" alt="" width="300" height="300"></img></div>
+        {% endblock %}
+    </div>
+
+<br>
+
+<br><br>
+
+{% block flex2 %}
+<div class="flexitem">
+  <div>
+      <p>Gráficas según el rango de edad</p>
+  </div>
+</div>
+{% endblock %}
+
+<br>
+
+    <div class='container'>
+        {% block content2 %}
+        <div align="center"><img src="static/css/casos_edad.jpeg" alt="" width="600" height="300"></img></div>
+        <br>
+        <div align="center"><img src="static/css/hosp_edad.jpeg" alt="" width="600" height="300"></img></div>
+        <br>
+        <div align="center"><img src="static/css/uci_edad.jpeg" alt="" width="600" height="300"></img></div>
+        <br>
+        <div align="center"><img src="static/css/def_edad.jpeg" alt="" width="600" height="300"></img></div>
+        <!--IMAGENES RANGOS-->
+        {% endblock %}
+    </div>
+
+<br>
+
+
+{% block imagen_hosp %}
+  <img src="static/css/provincias_valenciana.jpeg" alt="" width="360" height="300"></img>
+{% endblock %}
+<br><br>
+
